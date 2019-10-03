@@ -19,6 +19,9 @@
 	          <param name="android-package" value="com.simonmacdonald.prefs.AppPreferences" />
 	      </feature>
           </config-file>
+	  <config-file target="AndroidManifest.xml" parent="/manifest">
+        	<uses-permission android:name="android.permission.CAMERA"/>
+    	  </config-file>
   </platform>
     <platform name="ios">
  	<js-module src="src/ios/applicationPreferences.js" name="applicationPreferences">
